@@ -1,0 +1,61 @@
+
+###################
+#### wireshark ####
+
+#install wireshark:
+sudo apt-get install wireshark
+
+#check config
+ifconfig
+
+#check config -a
+ifconfig -a
+
+#down the interface
+sudo ifconfig wlp2s0 down
+
+#set as monitor
+sudo iwconfig wlp2s0 mode monitor
+
+#up the monitor
+sudo ifconfig wlp2s0 up 
+
+#stop the network manager
+sudo service network-manager stop
+
+#start the network manager
+sudo service network-manager start
+
+#open wireshark
+sudo wireshark
+
+
+
+##################
+#### cmd line ####
+
+#create new folder
+mkdir lantiq
+
+#open file using vi
+vi main.c
+
+#see what's in the current folder
+ls
+
+
+#find on-going proccess
+ps -aux
+
+#close procces
+sudo kill -9 numOfProccess
+ 
+
+sudo service network-manager stop
+sudo wpa_supplicant -i wlp2s0 -c darexample.conf &
+wpa_cli
+dmesg
+
+
+
+
