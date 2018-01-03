@@ -30,6 +30,8 @@ sudo service network-manager start
 sudo wireshark
 
 
+#
+
 
 ##################
 #### cmd line ####
